@@ -5,5 +5,6 @@ FactoryGirl.define do
     url { guid }
     summary { "Summary for #{title}" }
     published_at { Time.now }
+    company { FactoryGirl.build :company }
   end
 end
