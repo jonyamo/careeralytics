@@ -12,6 +12,7 @@ RSpec.describe Job, :type => :model do
   it { should respond_to :url }
   it { should respond_to :title }
   it { should respond_to :summary }
+  it { should respond_to :allows_remote }
   it { should respond_to :published_at }
 
   # validations
@@ -22,4 +23,5 @@ RSpec.describe Job, :type => :model do
 
   # associations
   it { should belong_to :company }
+  it { should have_and_belong_to_many :locations }
 end
