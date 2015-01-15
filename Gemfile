@@ -10,6 +10,8 @@ gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 
+gem "careers", "~> 0.0.1"
+
 group :development do
   gem "spring"
 end
