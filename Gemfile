@@ -16,4 +16,7 @@ end
 
 group :development, :test do
   gem "rspec-rails", "~> 3.1"
+  gem "factory_girl_rails", "~> 4.0"
+  gem "shoulda-matchers", "~> 2.7"
+  gem "vcr", "~> 2.9"
 end
