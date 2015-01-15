@@ -24,4 +24,5 @@ RSpec.describe Job, :type => :model do
   # associations
   it { should belong_to :company }
   it { should have_and_belong_to_many :locations }
+  it { should have_and_belong_to_many :categories }
 end
