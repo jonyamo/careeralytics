@@ -11,6 +11,8 @@ gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 
 gem "careers", "~> 0.0.1"
+gem "chartkick", "~> 1.3.2"
+gem "groupdate", "~> 2.4.0"
 
 group :development do
   gem "spring"
