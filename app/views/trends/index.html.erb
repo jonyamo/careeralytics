@@ -1,2 +1,16 @@
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
-<%= line_chart @categories %>
+<%= form_tag("/trends", method: "get") do %>
+  <div id="datepicker" class="input-daterange input-group input-group-sm col-xs-4 col-xs-offset-4">
+    <input type="text" class="input-sm form-control" id="datepicker-start"
+           name="start_date" value="<%= @start_date %>">
+    <span class="input-group-addon">to</span>
+    <input type="text" class="input-sm form-control" id="datepicker-end"
+           name="end_date" value="<%= @end_date %>">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">Go!</button>
+    </span>
+  </div>
+<% end %>
+<div id="chart">
+  <%= line_chart @categories, library: {title: "Top Categories", vAxis: {title: "# of jobs"}} %>
+</div>

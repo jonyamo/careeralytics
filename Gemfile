@@ -16,6 +16,7 @@ gem "groupdate", "~> 2.4.0"
 gem "therubyracer", "~> 0.12.1"
 gem "less-rails", "~> 2.6.0"
 gem "twitter-bootstrap-rails", "~> 3.2.0"
+gem "bootstrap-datepicker-rails", "~> 1.3.1.1"
 
 group :development do
   gem "spring"

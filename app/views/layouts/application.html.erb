@@ -39,13 +39,23 @@
   <body>
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Careers + Analytics = Careeralytics</a>
+        <%= link_to "Careers + Analytics = Careeralytics", trends_path, class: "navbar-brand" %>
+        <p class="navbar-text navbar-right">
+          Graphing job data from
+          <a href="https://careers.stackoverflow.com/" class="navbar-link">Stack Overflow Careers</a>
+        </p>
       </div>
     </div>
 
     <div class="container">
       <%= bootstrap_flash %>
       <%= yield %>
+      <footer>
+        <a href="https://github.com/jonyamo/careeralytics"
+           class="btn btn-block btn-social btn-github">
+          <i class="fa fa-github"></i> GitHub
+        </a>
+      </footer>
     </div>
   </body>
 </html>
