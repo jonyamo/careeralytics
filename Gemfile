@@ -18,6 +18,8 @@ gem "less-rails", "~> 2.6.0"
 gem "twitter-bootstrap-rails", "~> 3.2.0"
 gem "bootstrap-datepicker-rails", "~> 1.3.1.1"
 
+gem "puma"
+
 group :development do
   gem "spring"
 end
@@ -27,4 +29,8 @@ group :development, :test do
   gem "factory_girl_rails", "~> 4.0"
   gem "shoulda-matchers", "~> 2.7"
   gem "vcr", "~> 2.9"
+end
+
+group :production do
+  gem "rails_12factor"
 end
