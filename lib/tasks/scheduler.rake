@@ -9,7 +9,7 @@ namespace :scheduler do
   desc "Purges old records from DB"
   task :cleanup => :environment do
     puts "Purging old records..."
-    Job.delete_all("created_at < '#{60.days.ago}'")
+    Job.destroy_all("created_at < '#{30.days.ago}'")
     puts "done."
   end
 end
