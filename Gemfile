@@ -11,7 +11,7 @@ gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 
 gem "careers", "~> 0.0.1"
-gem "chartkick", "~> 1.3.2"
+gem "chartkick", "~> 3.3.0"
 gem "groupdate", "~> 2.4.0"
 gem "therubyracer", "~> 0.12.1"
 gem "less-rails", "~> 2.6.0"
