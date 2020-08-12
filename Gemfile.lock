@@ -49,7 +49,7 @@ GEM
     careers (0.0.2)
       faraday (~> 0.9.1)
       typhoeus (~> 0.6.9)
-    chartkick (3.3.0)
+    chartkick (3.4.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -209,7 +209,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-datepicker-rails (~> 1.3.1.1)
   careers (~> 0.0.1)
-  chartkick (~> 3.3.0)
+  chartkick (~> 3.4.0)
   coffee-rails (~> 4.0.0)
   factory_girl_rails (~> 4.0)
   groupdate (~> 2.4.0)
